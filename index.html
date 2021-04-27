@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>
+        CRUD
+    </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container py-5">
+       
+        <div class="form-group">
+            <!-- bnkhaly ism for nafs ism el id 3alshan norpotthis label by this input -->
+            <label for="productNameInput">productName:</label>
+            <input type="text" class="form-control" id="productNameInput">
+        </div>
+
+        <div class="form-group">
+            <label for=" productPriceInput">productPrice:</label>  
+            <input type="number" class="form-control" id="productPriceInput">
+        </div>
+
+        <div class="form-group">
+            <label for=" productCategoryInput">productCategory:</label>
+            <input type="text" class="form-control" id="productCategoryInput">
+        </div>
+
+        <div class="form-group">
+            <label for="productDescInput">productDescription:</label>
+           <textarea  class="form-control" id="productDescInput" cols="100" rows="3"></textarea>
+        </div>
+
+        <button onclick="addProduct();" class="btn btn-outline-info">add product</button>
+    </div>
+
+    <div class="container">
+        <input onkeyup="searchProduct(this.value);" type="text" class="form-control w-75 m-auto " placeholder="search product">
+
+        <table class="table  mt-4">
+            <thead >
+                <th>index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCategory</th>
+                <th>productDescription</th>
+                <th>update</th>
+                <th>delet</th>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
